@@ -32,6 +32,8 @@ class MoveZero:
                         self.num.append(ele)
                         break
         return self.num
+    
+  
 
 arr = MoveZero([]).create_array()
 print("original array:", arr)
@@ -40,3 +42,10 @@ mz.move_zero()
 print("array after moving zeros:", arr)
 print("number of zeros:", arr.count(0))
 print("number of non-zero elements:", len(arr) - arr.count(0))
+
+print()
+print("Testing two_nums function:")
+target = int(input("Enter a target sum: "))
+print("target:", target)
+result = mz.two_nums(target)
+print("two numbers sum to target:", result)
